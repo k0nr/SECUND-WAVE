@@ -59,7 +59,22 @@ body {
     top: 100vh;
     left: 25%;
     z-index: 2;
+    height: 175vh;
+    background: url("images/guillotine/chop-sides.png");
+        background-size: contain;
+        background-repeat: repeat-y;
 }
+
+    .top {
+        position: sticky;
+        top: 0px;
+    }
+
+    .landing {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
 
 
 .flex-container {
