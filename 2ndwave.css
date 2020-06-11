@@ -1,0 +1,112 @@
+<style>
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* portrait mode warning */
+#warning-message { display: none; 
+background-color: black;
+color:white;
+font-size:30px;
+}
+
+@media only screen and (orientation:portrait){
+#wrapper { display:none; }
+#warning-message { display:block; }
+
+ }
+
+@media only screen and (orientation:landscape){
+        #warning-message { display:none; }
+
+    }
+    
+    
+.outer {
+    top: 0px;
+    left: 0px;
+    
+}
+
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Teko', sans-serif;
+    text-transform: uppercase;
+    font-size: 28px;
+    cursor: url('images/cursor.cur'), default;
+    
+}
+
+.counter {
+	line-height: 1;
+	text-align: justify;
+	top: 1%;
+    z-index: 1;
+    position: fixed;  
+    width: 15%;
+    font-size: 1.8vw;
+
+
+}
+
+.chop {
+    position: absolute;
+    width: 40%;
+    top: 100vh;
+    left: 25%;
+    z-index: 2;
+}
+
+
+.flex-container {
+    
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: absolute;
+    height: 275vh;
+    left: 0%;
+}
+
+
+    .clouds {   
+        background: url('images/clouds.png'), repeat;
+        height: 175vh;
+        align-self: flex-end;;
+        width: 100%;
+        z-index: 1;
+    }
+
+
+.biden {
+        position: absolute;
+        width: 22%;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+}
+
+/* youtube */
+
+.youtube-responsive-container {
+position:relative;
+padding-bottom:56.25%;
+padding-top:30px;
+height:0;
+overflow:hidden;
+}
+
+.youtube-responsive-container iframe, 
+.youtube-responsive-container object, 
+.youtube-responsive-container embed {
+position:absolute;
+width:100%;
+height:100%;
+}
+
+</style>
+
