@@ -55,6 +55,20 @@ body {
 
 }
 
+    .counter a:link {
+        color: cyan;
+        text-decoration: none;
+    }
+    
+    .counter a:hover {
+        text-decoration: underline;
+    }
+    
+    .counter a:visited {
+        text-decoration: none;
+        color: cyan;
+    }
+
 .chop {
     position: absolute;
     width: 40%;
@@ -114,13 +128,19 @@ body {
         
     }
         .playlist a:link {
-            color: orange;
+            color: cyan;
             text-decoration: none;
         }
         
         .playlist a:hover {
             text-decoration: underline;
         }
+        
+        .playlist a:visited {
+            color: orange;
+        }
+        
+        
     
 .biden {
         position: absolute;
